@@ -1,0 +1,42 @@
+/* Ensure the container holds articles side by side */
+.news-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px; /* Adds space between cards */
+  justify-content: center; /* Centers the cards */
+}
+
+.card {
+  transition: transform 0.2s ease-in-out;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 300px; /* Adjust based on your preference */
+  position: relative; /* Required for index-number */
+}
+
+.highlighted {
+  border: 2px solid #007bff;
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+}
+.card-author,
+.card-date,
+.card-source {
+  font-size: 0.875rem;
+  color: #555;
+  margin: 5px 0;
+}
+
+/* Article number styling */
+.article-number {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: black;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 50%;
+  font-size: 1rem;
+  font-weight: bold;
+}
+

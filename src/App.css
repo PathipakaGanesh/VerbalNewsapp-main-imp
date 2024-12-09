@@ -1,0 +1,56 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  padding: 20px;
+}
+
+.bg-dark {
+  background-color: #343a40 !important;
+}
+
+.text-dark {
+  color: #343a40 !important;
+}
+
+.bg-light {
+  background-color: #ffffff !important;
+}
+
+.text-light {
+  color: #ffffff !important;
+}
+
+/* App.css or a specific CSS file for News component */
+.pagination-container {
+  display: flex;
+  justify-content: center; /* Centers the buttons horizontally */
+  margin-top: 20px;
+  margin-bottom: 20px;
+  
+}
+
+.pagination-button {
+  margin: 0 220px; /* Adds space between buttons */
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  background-color: #3cff00;
+  color: white;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+
+}
+
+.pagination-button:disabled {
+  background-color: #ccc; /* Light gray color for disabled buttons */
+  cursor: not-allowed;
+}
+
+.pagination-button:hover {
+  background-color: #b31b00; /* Darker blue when hovered */
+}
